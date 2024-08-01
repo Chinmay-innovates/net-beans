@@ -78,6 +78,11 @@ public class Basicjava {
         
         e.showEmployeeData();
         p.showPersonData();
+        
+        e.showEmployeeData();
+        p.showPersonData();
+        
+        
     }
 
 }
