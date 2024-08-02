@@ -67,6 +67,29 @@ class Employee extends Person {
 
 }
 
+abstract class Bank {
+
+    abstract float getROI();
+}
+
+class SBI extends Bank {
+
+    @Override
+    float getROI() {
+        return 8.4F;
+    }
+
+}
+
+class Axis extends Bank {
+
+    @Override
+    float getROI() {
+        return 9.01F;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+    }
+
+}
+
 public class Basicjava {
 
     /**
@@ -76,10 +99,15 @@ public class Basicjava {
 
         Person p = new Person("Chinmay", 24);
 
-        Employee e = new Employee("Shami", 34, 24000.435);
+        Employee e = new Employee("Sammy", 22, 24000.435);
 
         e.showEmployeeData();
         p.showPersonData();
+
+        SBI sbi = new SBI();
+        Axis axis = new Axis();
+        System.out.println("SBI ROI: " + sbi.getROI());
+        System.out.println("AXIS ROI: " + axis.getROI());
 
     }
 
