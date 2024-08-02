@@ -4,6 +4,8 @@
  */
 package com.basicjava;
 
+import java.util.Scanner;
+
 /**
  *
  * @author CHINMAY
@@ -58,7 +60,7 @@ class Employee extends Person {
     }
 
     void showEmployeeData() {
-       
+
         super.showPersonData();
         System.out.println("Salary : " + sal);
     }
@@ -73,16 +75,12 @@ public class Basicjava {
     public static void main(String[] args) {
 
         Person p = new Person("Chinmay", 24);
-        
+
         Employee e = new Employee("Shami", 34, 24000.435);
-        
+
         e.showEmployeeData();
         p.showPersonData();
-        
-        e.showEmployeeData();
-        p.showPersonData();
-        
-        
+
     }
 
 }
