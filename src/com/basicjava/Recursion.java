@@ -5,11 +5,17 @@
 package com.basicjava;
 
 import java.util.ArrayList;
+
 /**
  *
  * @author CHINMAY GOPE
  */
 public class Recursion {
+
+    public static String str = "cos";
+    public static int n = 3;
+    public static int m = 3;
+    public static ArrayList<Integer> subset = new ArrayList<>();
 
     public static int factorial(int n) {
         if (n <= 1) {
@@ -98,24 +104,20 @@ public class Recursion {
     public static void main(String[] args) {
 
 //        get permutations
-        String str = "cos";
-        System.out.println("Permutations for given string " + str + " : " + factorial(str.length()));
+        System.out.println("Total permutations for given string " + str + " : " + factorial(str.length()));
         printPermutation(str, "");
 
 //        get total paths from  0,0 to n,m in a n*m matrix
-        int n = 3, m;
-        m = 3;
-//        int totalPaths = countPaths(0, 0, n, m);
-//        System.out.println(totalPaths);
+        int totalPaths = countPaths(0, 0, n, m);
+        System.out.println(totalPaths);
 
 //        get no.of tiles of size 1*m in a flor of size n*m
         System.out.println("Total placements : " + placeTiles(n, m));
-        
+
 //        get no of invites to your party
         System.out.println("Total wasys to call : " + callGuests(n));
 
 //        get subsets of given string
-        ArrayList<Integer> subset = new ArrayList<>();
         System.out.println("subsets of n = " + n);
         findSubsets(n, subset);
 
