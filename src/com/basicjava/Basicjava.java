@@ -85,7 +85,7 @@ class Axis extends Bank {
 
     @Override
     float getROI() {
-        return 9.01F;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        return 9.01F;
     }
 
 }
@@ -108,7 +108,6 @@ public class Basicjava {
         Axis axis = new Axis();
         System.out.println("SBI ROI: " + sbi.getROI());
         System.out.println("AXIS ROI: " + axis.getROI());
-
     }
 
 }
