@@ -103,28 +103,28 @@ public class Recursion2 {
     /**
      *
      * @param str input string
-     * @param find required character to move to end of string
+     * @param move required character to move to end of string
      * @param idx
      * @param count track the count of required character
      * @param newString required character appends to end of the string
      */
-    public static void moveAllX(String str, char find, int idx, int count, String newString) {
+    public static void moveAllX(String str, char move, int idx, int count, String newString) {
 
         if (idx == str.length()) {
             for (int i = 0; i < count; i++) {
-                newString += find;
+                newString += move;
             }
             System.out.println(newString);
             return;
         }
 
         char currChar = str.charAt(idx);
-        if (currChar == find) {
+        if (currChar == move) {
             count++;
-            moveAllX(str, find, idx + 1, count, newString);
+            moveAllX(str, move, idx + 1, count, newString);
         } else {
             newString += currChar;
-            moveAllX(str, find, idx + 1, count, newString);
+            moveAllX(str, move, idx + 1, count, newString);
         }
     }
 
@@ -218,7 +218,7 @@ public class Recursion2 {
         removeDuplicates(abxccdff, 0, "");
 
         subSequences("aaa", 0, "", set);
-        
+
         printCombinations("24", 0, "");
     }
 
