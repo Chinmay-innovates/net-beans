@@ -4,8 +4,6 @@
  */
 package com.basicjava;
 
-import java.util.Scanner;
-
 /**
  *
  * @author CHINMAY
@@ -67,29 +65,6 @@ class Employee extends Person {
 
 }
 
-abstract class Bank {
-
-    abstract float getROI();
-}
-
-class SBI extends Bank {
-
-    @Override
-    float getROI() {
-        return 8.4F;
-    }
-
-}
-
-class Axis extends Bank {
-
-    @Override
-    float getROI() {
-        return 9.01F;
-    }
-
-}
-
 public class Basicjava {
 
     /**
@@ -104,10 +79,6 @@ public class Basicjava {
         e.showEmployeeData();
         p.showPersonData();
 
-        SBI sbi = new SBI();
-        Axis axis = new Axis();
-        System.out.println("SBI ROI: " + sbi.getROI());
-        System.out.println("AXIS ROI: " + axis.getROI());
     }
 
 }
