@@ -71,7 +71,6 @@ public class SudokuSolver {
 
         for (int[][] board : boards) {
             printBoard(board);
-            System.out.println(board.getClass());
             if (solveBoard(board)) {
                 System.out.println("Solved successfully!");
             } else {
